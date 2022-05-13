@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Hello CSS!</title>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+		<link rel = "stylesheet" href = "css/main.css">
+		<style>
+h2#hoge{
+	color:yellow;
+}
+h2.bar.foo{
+	color:pink;
+	font-size:20px;
+}
+h2{
+	color:red;
+	font-size:20px;
+}
+h2{
+	color:#0000ff !important;/*通常使わない。プラグインとかで差し込まれて変えられなくなったときにやむなく使う、という場合がある。*/
+}
+.red{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+.fs20{
+	font-size:20px;
+}
+.fs24{
+	font-size:24:24px;
+}
+fs28{
+	font-size:28:28px;
+}
+#hoge{
+	text-decoration:underline;
+	border:1px solid black;
+	width:220px;
+}
+#favorite{
+	color:green;
+	font-size:40px;
+	border-left:5px solid green;
+	border-bottom:2px solid green;
+	padding:5px 20px;
+	width:385px;
+	margin-bottom:300px;
+	margin-left:30px
+}
+		</style>
+	</head>
+	<body>
+		<h1>Hello CSS!</H1>
+		<h2 class>Hello CSS!</H2>
+		<h2 id = "hoge">Hello CSS!</H2>
+		<h2 style = "color:aqua;font-weight:bold">Hello CSS!</h2>
+		<p class = "red">Hello</p>
+		<ol>
+			<li class = "red fs28">巨人</li>
+			<li class = "blue fs28">ヤクルト</li>
+			<li class = "blue fs20">中日</li>
+			<li class = "red fs20">広島</li>
+			<li class = "blue fs18">DeNa</li>
+			<li class = "fs18">阪神</li>
+		</ol>
+		<P>CSSとはCascading Style Sheetsの略でHTMLの見た目を装飾します</p>
+		<p id = "favorite">経験にマイナスなし</p>
+	</body>
+</html>
