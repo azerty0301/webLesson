@@ -165,3 +165,15 @@ END AS ステータス
 FROM パーティー AS p
 LEFT JOIN (SELECT * FROM コード WHERE コード種別=2) AS c
 ON p.状態コード=c.コード値;
+
+37
+
+38
+SELECT 名称 AS なまえ, HP AS 現在のHP,
+CHAR_LENGTH(名称)*10 AS 予想ダメージ
+FROM パーティー;
+
+39
+UPDATE パーティー
+SET　状態コード='04'
+WHERE hp % 4 = 0 OR mp % 4 =0;
